@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CityWeatherView: View {
+struct CityWeatherView: View, FormattedData {
     @EnvironmentObject var model: WeatherViewModel
     
     var body: some View {
@@ -19,35 +19,46 @@ struct CityWeatherView: View {
                             .listRowSeparator(.hidden)
                     }
                 }.listStyle(.plain)
-                    .navigationBarTitle("Weather Details")
+                    .navigationBarTitle(weatherData.name)
                 
                 Spacer()
             }
         } else {
-            Text("Please go back and enter valid city name.")
+            Text("Please enter valid city name.")
                 .padding()
         }
     }
     
-    func cardDesign(_ weather: Weather) -> some View {
-        VStack(alignment:.leading) {
-            HStack(alignment: .top) {
-                VStack {
-                    Text(weather.main)
-                        .font(.system(.title3))
-                        .padding(.vertical)
-                    Text(weather.weatherDescription)
-                        .font(.footnote)
+    @ViewBuilder
+    func cardDesign(_ item: Weather) -> some View {
+        
+            VStack(alignment:.leading) {
+                HStack(alignment: .top) {
+                    VStack {
+                        Text(item.main)
+                            .font(.system(.title3))
+                            .padding(.vertical)
+                        Text(item.weatherDescription)
+                            .font(.footnote)
+                        Spacer()
+                    }
+                    
+                    Spacer()
+                    
+                    if let weather = model.weatherModel {
+                        VStack {
+                            Text("\(convertTemp(kelvin: weather.main.temp))")
+                                .font(.system(.largeTitle))
+                                .bold()
+                                .padding(.vertical)
+                            
+                            Text("Temperature")
+                                .font(.footnote)
+                            Spacer()
+                        }
+                    }
                 }
-                
-                Spacer()
-                
-                Text("Temp: \(weather.main)")
-                    .font(.system(.title2))
-                    .bold()
-                    .padding(.vertical)
-            }
-        }.padding().frame(height: 100)
+            }.padding().frame(idealHeight: 100)
     }
 }
 

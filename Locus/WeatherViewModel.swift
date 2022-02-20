@@ -26,6 +26,8 @@ class WeatherViewModel: ObservableObject, FormattedData {
     
     @ObservedObject var locationManager = LocationManager()
     
+    @AppStorage("listOfSearches", store: .standard) var listOfSearches: String = ""
+    
     init() {
         self.isLoading = false
         self.errorMessage = nil
@@ -58,6 +60,52 @@ extension WeatherViewModel: ServiceHandler {
             Task {
                 self.activeAlert = .custom(err.localizedDescription)
             }
+        }
+    }
+}
+
+extension WeatherViewModel {
+    
+    func getSymbol(for condition: String) -> String {
+        
+        //MARK: NEED to send the assignment, no time to add these symbols
+        let _ = [
+            "sun.min.fill",
+            "sun.max.fill",
+            "sunrise.fill",
+            "sunset.fill",
+            "sun.dust.fill",
+            "sun.haze.fill",
+            "moon.fill",
+            "moon.circle.fill",
+            "moon.stars.fill",
+            "cloud.fill",
+            "cloud.drizzle.fill",
+            "cloud.rain.fill",
+            "cloud.heavyrain.fill",
+            "cloud.fog.fill",
+            "cloud.hail.fill",
+            "cloud.snow.fill",
+            "cloud.sleet.fill",
+            "cloud.bolt.fill",
+            "cloud.bolt.rain.fill",
+            "cloud.sun.fill",
+            "cloud.sun.rain.fill",
+            "cloud.sun.bolt.fill",
+            "cloud.moon.fill",
+            "cloud.moon.rain.fill",
+            "cloud.moon.bolt.fill",
+            "smoke.fill",
+            "wind.snow",
+            "tornado",
+            "tropicalstorm",
+            "hurricane"
+        ]
+        
+        switch condition {
+        case "Smoke":
+            return "sunrise.fill"
+        default: return "cloud.sun.rain.fill"
         }
     }
 }

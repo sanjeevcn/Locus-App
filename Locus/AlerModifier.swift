@@ -77,7 +77,7 @@ public struct Loader: View {
                 .padding()
         }
         .padding()
-        .background(Color.blue)
+        .background(Color.accentColor)
         .cornerRadius(10)
     }
 }

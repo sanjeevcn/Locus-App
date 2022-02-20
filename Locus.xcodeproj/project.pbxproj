@@ -43,9 +43,9 @@
 		AF6827C627C1AF3C00D727C1 /* AlerModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6827C527C1AF3C00D727C1 /* AlerModifier.swift */; };
 		AF6827C727C1AF3D00D727C1 /* AlerModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6827C527C1AF3C00D727C1 /* AlerModifier.swift */; };
 		AF6827C827C1AF3D00D727C1 /* AlerModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6827C527C1AF3C00D727C1 /* AlerModifier.swift */; };
-		AF6827CA27C1B15D00D727C1 /* LocationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6827C927C1B15D00D727C1 /* LocationHandler.swift */; };
-		AF6827CB27C1B15D00D727C1 /* LocationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6827C927C1B15D00D727C1 /* LocationHandler.swift */; };
-		AF6827CC27C1B15D00D727C1 /* LocationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6827C927C1B15D00D727C1 /* LocationHandler.swift */; };
+		AF6827CA27C1B15D00D727C1 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6827C927C1B15D00D727C1 /* LocationManager.swift */; };
+		AF6827CB27C1B15D00D727C1 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6827C927C1B15D00D727C1 /* LocationManager.swift */; };
+		AF6827CC27C1B15D00D727C1 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6827C927C1B15D00D727C1 /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,7 +88,7 @@
 		AF6827BD27C1A5C900D727C1 /* CityGeoCodingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityGeoCodingModel.swift; sourceTree = "<group>"; };
 		AF6827C127C1A66700D727C1 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
 		AF6827C527C1AF3C00D727C1 /* AlerModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlerModifier.swift; sourceTree = "<group>"; };
-		AF6827C927C1B15D00D727C1 /* LocationHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationHandler.swift; sourceTree = "<group>"; };
+		AF6827C927C1B15D00D727C1 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,7 +146,7 @@
 				AF6827A927C1877800D727C1 /* DetailWeatherView.swift */,
 				AF6827C527C1AF3C00D727C1 /* AlerModifier.swift */,
 				AF6827A527C1875000D727C1 /* WeatherViewModel.swift */,
-				AF6827C927C1B15D00D727C1 /* LocationHandler.swift */,
+				AF6827C927C1B15D00D727C1 /* LocationManager.swift */,
 				AF6827B127C1930D00D727C1 /* WeatherModel.swift */,
 				AF6827AD27C1884E00D727C1 /* ServiceHandler.swift */,
 				AF6827B927C1936B00D727C1 /* ApiEndpoint.swift */,
@@ -318,7 +318,7 @@
 				AF6827B627C1933B00D727C1 /* CustomError.swift in Sources */,
 				AF6827AE27C1884E00D727C1 /* ServiceHandler.swift in Sources */,
 				AF68277E27C186D900D727C1 /* CityWeatherView.swift in Sources */,
-				AF6827CA27C1B15D00D727C1 /* LocationHandler.swift in Sources */,
+				AF6827CA27C1B15D00D727C1 /* LocationManager.swift in Sources */,
 				AF6827AA27C1877800D727C1 /* DetailWeatherView.swift in Sources */,
 				AF6827BE27C1A5C900D727C1 /* CityGeoCodingModel.swift in Sources */,
 				AF6827A627C1875000D727C1 /* WeatherViewModel.swift in Sources */,
@@ -342,7 +342,7 @@
 				AF6827AB27C1877800D727C1 /* DetailWeatherView.swift in Sources */,
 				AF6827AF27C1884E00D727C1 /* ServiceHandler.swift in Sources */,
 				AF6827BB27C1936B00D727C1 /* ApiEndpoint.swift in Sources */,
-				AF6827CB27C1B15D00D727C1 /* LocationHandler.swift in Sources */,
+				AF6827CB27C1B15D00D727C1 /* LocationManager.swift in Sources */,
 				AF6827BF27C1A5C900D727C1 /* CityGeoCodingModel.swift in Sources */,
 				AF6827A727C1875000D727C1 /* WeatherViewModel.swift in Sources */,
 				AF6827B327C1930D00D727C1 /* WeatherModel.swift in Sources */,
@@ -357,7 +357,7 @@
 				AF6827B827C1933B00D727C1 /* CustomError.swift in Sources */,
 				AF6827B027C1884E00D727C1 /* ServiceHandler.swift in Sources */,
 				AF68279727C186EA00D727C1 /* LocusUITests.swift in Sources */,
-				AF6827CC27C1B15D00D727C1 /* LocationHandler.swift in Sources */,
+				AF6827CC27C1B15D00D727C1 /* LocationManager.swift in Sources */,
 				AF6827AC27C1877800D727C1 /* DetailWeatherView.swift in Sources */,
 				AF6827C027C1A5C900D727C1 /* CityGeoCodingModel.swift in Sources */,
 				AF6827A827C1875000D727C1 /* WeatherViewModel.swift in Sources */,
@@ -519,7 +519,6 @@
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Locus needs to know your location to give you precise weather forecast.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -554,7 +553,6 @@
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Locus needs to know your location to give you precise weather forecast.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
