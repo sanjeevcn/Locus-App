@@ -7,13 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF1F5B2A27C260F70021A52C /* FormattedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1F5B2927C260F70021A52C /* FormattedData.swift */; };
+		AF36190827C23F1B006DE5A2 /* CustomTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF36190727C23F1B006DE5A2 /* CustomTextfield.swift */; };
 		AF68277C27C186D900D727C1 /* LocusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF68277B27C186D900D727C1 /* LocusApp.swift */; };
-		AF68277E27C186D900D727C1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF68277D27C186D900D727C1 /* ContentView.swift */; };
+		AF68277E27C186D900D727C1 /* CityWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF68277D27C186D900D727C1 /* CityWeatherView.swift */; };
 		AF68278027C186E800D727C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF68277F27C186E800D727C1 /* Assets.xcassets */; };
 		AF68278327C186E800D727C1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF68278227C186E800D727C1 /* Preview Assets.xcassets */; };
 		AF68278D27C186EA00D727C1 /* LocusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF68278C27C186EA00D727C1 /* LocusTests.swift */; };
 		AF68279727C186EA00D727C1 /* LocusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF68279627C186EA00D727C1 /* LocusUITests.swift */; };
 		AF68279927C186EA00D727C1 /* LocusUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF68279827C186EA00D727C1 /* LocusUITestsLaunchTests.swift */; };
+		AF6827A627C1875000D727C1 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6827A527C1875000D727C1 /* WeatherViewModel.swift */; };
+		AF6827A727C1875000D727C1 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6827A527C1875000D727C1 /* WeatherViewModel.swift */; };
+		AF6827A827C1875000D727C1 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6827A527C1875000D727C1 /* WeatherViewModel.swift */; };
+		AF6827AA27C1877800D727C1 /* DetailWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6827A927C1877800D727C1 /* DetailWeatherView.swift */; };
+		AF6827AB27C1877800D727C1 /* DetailWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6827A927C1877800D727C1 /* DetailWeatherView.swift */; };
+		AF6827AC27C1877800D727C1 /* DetailWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6827A927C1877800D727C1 /* DetailWeatherView.swift */; };
+		AF6827AE27C1884E00D727C1 /* ServiceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6827AD27C1884E00D727C1 /* ServiceHandler.swift */; };
+		AF6827AF27C1884E00D727C1 /* ServiceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6827AD27C1884E00D727C1 /* ServiceHandler.swift */; };
+		AF6827B027C1884E00D727C1 /* ServiceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6827AD27C1884E00D727C1 /* ServiceHandler.swift */; };
+		AF6827B227C1930D00D727C1 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6827B127C1930D00D727C1 /* WeatherModel.swift */; };
+		AF6827B327C1930D00D727C1 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6827B127C1930D00D727C1 /* WeatherModel.swift */; };
+		AF6827B427C1930D00D727C1 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6827B127C1930D00D727C1 /* WeatherModel.swift */; };
+		AF6827B627C1933B00D727C1 /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6827B527C1933B00D727C1 /* CustomError.swift */; };
+		AF6827B727C1933B00D727C1 /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6827B527C1933B00D727C1 /* CustomError.swift */; };
+		AF6827B827C1933B00D727C1 /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6827B527C1933B00D727C1 /* CustomError.swift */; };
+		AF6827BA27C1936B00D727C1 /* ApiEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6827B927C1936B00D727C1 /* ApiEndpoint.swift */; };
+		AF6827BB27C1936B00D727C1 /* ApiEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6827B927C1936B00D727C1 /* ApiEndpoint.swift */; };
+		AF6827BC27C1936B00D727C1 /* ApiEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6827B927C1936B00D727C1 /* ApiEndpoint.swift */; };
+		AF6827BE27C1A5C900D727C1 /* CityGeoCodingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6827BD27C1A5C900D727C1 /* CityGeoCodingModel.swift */; };
+		AF6827BF27C1A5C900D727C1 /* CityGeoCodingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6827BD27C1A5C900D727C1 /* CityGeoCodingModel.swift */; };
+		AF6827C027C1A5C900D727C1 /* CityGeoCodingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6827BD27C1A5C900D727C1 /* CityGeoCodingModel.swift */; };
+		AF6827C227C1A66700D727C1 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6827C127C1A66700D727C1 /* LandingView.swift */; };
+		AF6827C327C1A66700D727C1 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6827C127C1A66700D727C1 /* LandingView.swift */; };
+		AF6827C427C1A66700D727C1 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6827C127C1A66700D727C1 /* LandingView.swift */; };
+		AF6827C627C1AF3C00D727C1 /* AlerModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6827C527C1AF3C00D727C1 /* AlerModifier.swift */; };
+		AF6827C727C1AF3D00D727C1 /* AlerModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6827C527C1AF3C00D727C1 /* AlerModifier.swift */; };
+		AF6827C827C1AF3D00D727C1 /* AlerModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6827C527C1AF3C00D727C1 /* AlerModifier.swift */; };
+		AF6827CA27C1B15D00D727C1 /* LocationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6827C927C1B15D00D727C1 /* LocationHandler.swift */; };
+		AF6827CB27C1B15D00D727C1 /* LocationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6827C927C1B15D00D727C1 /* LocationHandler.swift */; };
+		AF6827CC27C1B15D00D727C1 /* LocationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6827C927C1B15D00D727C1 /* LocationHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +66,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AF1F5B2827C249D10021A52C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		AF1F5B2927C260F70021A52C /* FormattedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormattedData.swift; sourceTree = "<group>"; };
+		AF36190727C23F1B006DE5A2 /* CustomTextfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextfield.swift; sourceTree = "<group>"; };
 		AF68277827C186D900D727C1 /* Locus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Locus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF68277B27C186D900D727C1 /* LocusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocusApp.swift; sourceTree = "<group>"; };
-		AF68277D27C186D900D727C1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AF68277D27C186D900D727C1 /* CityWeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityWeatherView.swift; sourceTree = "<group>"; };
 		AF68277F27C186E800D727C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF68278227C186E800D727C1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AF68278827C186EA00D727C1 /* LocusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +79,16 @@
 		AF68279227C186EA00D727C1 /* LocusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF68279627C186EA00D727C1 /* LocusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocusUITests.swift; sourceTree = "<group>"; };
 		AF68279827C186EA00D727C1 /* LocusUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocusUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AF6827A527C1875000D727C1 /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
+		AF6827A927C1877800D727C1 /* DetailWeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailWeatherView.swift; sourceTree = "<group>"; };
+		AF6827AD27C1884E00D727C1 /* ServiceHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceHandler.swift; sourceTree = "<group>"; };
+		AF6827B127C1930D00D727C1 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
+		AF6827B527C1933B00D727C1 /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
+		AF6827B927C1936B00D727C1 /* ApiEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiEndpoint.swift; sourceTree = "<group>"; };
+		AF6827BD27C1A5C900D727C1 /* CityGeoCodingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityGeoCodingModel.swift; sourceTree = "<group>"; };
+		AF6827C127C1A66700D727C1 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
+		AF6827C527C1AF3C00D727C1 /* AlerModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlerModifier.swift; sourceTree = "<group>"; };
+		AF6827C927C1B15D00D727C1 /* LocationHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +139,21 @@
 		AF68277A27C186D900D727C1 /* Locus */ = {
 			isa = PBXGroup;
 			children = (
+				AF1F5B2827C249D10021A52C /* Info.plist */,
 				AF68277B27C186D900D727C1 /* LocusApp.swift */,
-				AF68277D27C186D900D727C1 /* ContentView.swift */,
+				AF6827C127C1A66700D727C1 /* LandingView.swift */,
+				AF68277D27C186D900D727C1 /* CityWeatherView.swift */,
+				AF6827A927C1877800D727C1 /* DetailWeatherView.swift */,
+				AF6827C527C1AF3C00D727C1 /* AlerModifier.swift */,
+				AF6827A527C1875000D727C1 /* WeatherViewModel.swift */,
+				AF6827C927C1B15D00D727C1 /* LocationHandler.swift */,
+				AF6827B127C1930D00D727C1 /* WeatherModel.swift */,
+				AF6827AD27C1884E00D727C1 /* ServiceHandler.swift */,
+				AF6827B927C1936B00D727C1 /* ApiEndpoint.swift */,
+				AF6827BD27C1A5C900D727C1 /* CityGeoCodingModel.swift */,
+				AF36190727C23F1B006DE5A2 /* CustomTextfield.swift */,
+				AF6827B527C1933B00D727C1 /* CustomError.swift */,
+				AF1F5B2927C260F70021A52C /* FormattedData.swift */,
 				AF68277F27C186E800D727C1 /* Assets.xcassets */,
 				AF68278127C186E800D727C1 /* Preview Content */,
 			);
@@ -257,8 +315,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF68277E27C186D900D727C1 /* ContentView.swift in Sources */,
+				AF6827B627C1933B00D727C1 /* CustomError.swift in Sources */,
+				AF6827AE27C1884E00D727C1 /* ServiceHandler.swift in Sources */,
+				AF68277E27C186D900D727C1 /* CityWeatherView.swift in Sources */,
+				AF6827CA27C1B15D00D727C1 /* LocationHandler.swift in Sources */,
+				AF6827AA27C1877800D727C1 /* DetailWeatherView.swift in Sources */,
+				AF6827BE27C1A5C900D727C1 /* CityGeoCodingModel.swift in Sources */,
+				AF6827A627C1875000D727C1 /* WeatherViewModel.swift in Sources */,
+				AF6827C627C1AF3C00D727C1 /* AlerModifier.swift in Sources */,
+				AF6827C227C1A66700D727C1 /* LandingView.swift in Sources */,
+				AF6827B227C1930D00D727C1 /* WeatherModel.swift in Sources */,
+				AF1F5B2A27C260F70021A52C /* FormattedData.swift in Sources */,
 				AF68277C27C186D900D727C1 /* LocusApp.swift in Sources */,
+				AF36190827C23F1B006DE5A2 /* CustomTextfield.swift in Sources */,
+				AF6827BA27C1936B00D727C1 /* ApiEndpoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +336,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF6827C727C1AF3D00D727C1 /* AlerModifier.swift in Sources */,
+				AF6827C327C1A66700D727C1 /* LandingView.swift in Sources */,
 				AF68278D27C186EA00D727C1 /* LocusTests.swift in Sources */,
+				AF6827AB27C1877800D727C1 /* DetailWeatherView.swift in Sources */,
+				AF6827AF27C1884E00D727C1 /* ServiceHandler.swift in Sources */,
+				AF6827BB27C1936B00D727C1 /* ApiEndpoint.swift in Sources */,
+				AF6827CB27C1B15D00D727C1 /* LocationHandler.swift in Sources */,
+				AF6827BF27C1A5C900D727C1 /* CityGeoCodingModel.swift in Sources */,
+				AF6827A727C1875000D727C1 /* WeatherViewModel.swift in Sources */,
+				AF6827B327C1930D00D727C1 /* WeatherModel.swift in Sources */,
+				AF6827B727C1933B00D727C1 /* CustomError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,8 +354,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF6827B827C1933B00D727C1 /* CustomError.swift in Sources */,
+				AF6827B027C1884E00D727C1 /* ServiceHandler.swift in Sources */,
 				AF68279727C186EA00D727C1 /* LocusUITests.swift in Sources */,
+				AF6827CC27C1B15D00D727C1 /* LocationHandler.swift in Sources */,
+				AF6827AC27C1877800D727C1 /* DetailWeatherView.swift in Sources */,
+				AF6827C027C1A5C900D727C1 /* CityGeoCodingModel.swift in Sources */,
+				AF6827A827C1875000D727C1 /* WeatherViewModel.swift in Sources */,
+				AF6827C827C1AF3D00D727C1 /* AlerModifier.swift in Sources */,
+				AF6827C427C1A66700D727C1 /* LandingView.swift in Sources */,
+				AF6827B427C1930D00D727C1 /* WeatherModel.swift in Sources */,
 				AF68279927C186EA00D727C1 /* LocusUITestsLaunchTests.swift in Sources */,
+				AF6827BC27C1936B00D727C1 /* ApiEndpoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,12 +506,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Locus/Preview Content\"";
 				DEVELOPMENT_TEAM = JD33ZR6EU7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Locus/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Locus needs to know your location to give you precise weather forecast.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Locus needs to know your location to give you precise weather forecast.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Locus needs to know your location to give you precise weather forecast.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -432,8 +527,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.iNube.Locus;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iNube.BerryNestInternal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "BerryNest Internal";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -445,12 +541,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Locus/Preview Content\"";
 				DEVELOPMENT_TEAM = JD33ZR6EU7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Locus/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Locus needs to know your location to give you precise weather forecast.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Locus needs to know your location to give you precise weather forecast.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Locus needs to know your location to give you precise weather forecast.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -461,8 +562,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.iNube.Locus;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iNube.BerryNestInternal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "BerryNest Internal";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
